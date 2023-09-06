@@ -43,12 +43,52 @@ REPOSTA = Sinceramente não consegui entender esse código sem executar ele. */
 
 
 
+/* EXERCÍCIO 1 DE ESCRITA DE CÓDIGO
 const pets = Number(prompt("Quantos Bichinhos tu tem?"))
 
 if (pets === 0) {
   console.log("Ai tadinho dele gente. Vai adotar um gato ou um cachorro aí meu chapa.")
 }
 
-if (pets > 0) {
-  prompt("Diz o nome dele(s) aí")
+else {
+let nomes = []
+for (i = 0; i <= pets; i++){
+  const pergunta = prompt("Quais o(s) nome(s)?")
+  nomes.push(pergunta)
+}  
+  console.log(nomes)
+} */
+
+
+/*
+const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
+console.log(arrayOriginal)
+const valor = ()=> {
+  for(let array of arrayOriginal){
+  }
+const valorMaximo = Number(valorMaximo > arrayOriginal)
 }
+
+vezesDez = () => { 
+    for(let numero of valorOriginal) {
+        console.log(numero / 10)
+    }
+}
+*/
+
+
+/*
+const numeros = [0, 1, 2, 3, 4, 5,]
+for (let i = 0; i <numeros.length; i++) {
+  console.log(`O número do índice: ${i} é ${numeros[i]}`)
+} */
+
+
+const numeros = [0, 1, 2, 3, 4, 5,]
+
+for (let numero of numeros) {
+  const indice = numeros.indexOf(numero)
+  console.log(`O número de índice: ${indice} é ${numero}`)
+}
+
+
